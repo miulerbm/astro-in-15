@@ -1,0 +1,13 @@
+---
+import Button from "../components/Button";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+  <p id="copyright" class="text-3xl bg-blue-500 text-white"></p>
+  <Button client:load />
+</MainLayout>
+
+<script>
+  import "../js/utils.js";
+</script>
